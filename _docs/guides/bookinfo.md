@@ -180,8 +180,9 @@ To start the application, follow the instructions below corresponding to your Is
 
 1. Bring up the application containers.
 
-    1. To test with Consul, run the following command:
+    1. To test with Consul, run the following commands:
         ```bash
+        docker network create consul_istiomesh
         docker-compose -f samples/bookinfo/consul/bookinfo.yaml up -d
         ```
     1. To test with Eureka, run the following command:
